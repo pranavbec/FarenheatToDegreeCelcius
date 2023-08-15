@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Cafe Coffee Day</title>
+        <link rel="stylesheet" type="text/css" href="jacv.css">
+    </head>
+    <body>
+       <div class="wrapper">
+        <header class="header">
+        <h1>Farenheat to celsius</h1>
+        </header>
+        <div class="content">
+            <div class="block">
+                <input type="number" id="cel" placeholder="Enter Farenheat">
+                <br>
+                <button onclick="calcu()">Converter</button>
+                <br>
+                <p id="result"></p>
+
+            </div>
+        </div>
+       </div>
+       <script type="text/javascript">
+        function calcu(){
+            var fh=document.getElementById("cel");
+            var f=parseInt(fh.value);
+            var c=((f - 32) *5)/ 9;
+            document.getElementById("result").innerHTML = c;
+        }
+       </script>
+    </body>
+</html>
